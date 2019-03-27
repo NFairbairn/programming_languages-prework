@@ -8,7 +8,9 @@ new_hash = {}
         if new_hash[language].nil?
           new_hash[language] = {}
         end
+        if new_hash[language][type].nil?
           new_hash[language] = {type: type_value}
+        end
           new_hash[language][:style] ||= []
           new_hash[language][:style] << lang_type
       end
