@@ -8,8 +8,8 @@ new_hash = {}
         if new_hash[language].nil?
           new_hash[language] = {}
         end
-        new_hash[language] = {type: type_value}
-        new_hash[language][:style] ||= []
+          new_hash[language] = {type: type_value}
+          new_hash[language][:style] ||= []
         if new_hash[language][:style].include?(lang_type)
           new_hash[language][:style] << lang_type
         end
