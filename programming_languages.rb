@@ -11,7 +11,6 @@ new_hash = {}
           new_hash[language] = {type: type_value}
           new_hash[language][:style] ||= []
           new_hash[language][:style] << lang_type
-
       end
     end
   end
