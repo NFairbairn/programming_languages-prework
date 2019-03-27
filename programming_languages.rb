@@ -10,9 +10,7 @@ new_hash = {}
         end
           new_hash[language] = {type: type_value}
           new_hash[language][:style] ||= []
-        if new_hash[language][:style].include?(lang_type)
           new_hash[language][:style] << lang_type
-        end
         binding.pry
       end
     end
